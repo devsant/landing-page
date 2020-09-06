@@ -1,1 +1,1 @@
-- Proyect Landind Page - freeCode Camp
+- Project Landing Page - freeCode Camp

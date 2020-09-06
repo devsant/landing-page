@@ -1,1 +1,180 @@
 @import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+:root {
+  --red-color: #e63946;
+  --gray-color: #f1faee;
+  --blue-color: #457b9d;
+  --dark-blue-color: #1d3557;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--gray-color);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-blue-color);
+}
+
+a:hover {
+  color: var(--blue-color);
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  text-transform: uppercase;
+  background: var(--blue-color);
+  text-align: center;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border: none;
+  color: var(--red-color);
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.grid {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  background: var(--gray-color);
+  width: 100%;
+  height: 80px;
+  min-height: 75px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  width: 60vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.logo>img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .logo>img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+nav>ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav {
+    width: 100%;
+    background: var(--gray-color);
+  }
+
+  nav>ul {
+    width: 100vw;
+    padding: 1rem;
+  }
+}
+
+#email-section {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+}
+
+#email-section>h2 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#email {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 25vw;
+}
+
+#email:focus {
+  outline-color: var(--red-color);
+}
+
+#submit {
+  transition: all 0.5s;
+  display: flex;
+  align-self: center;
+}
+
+#form input[type="submit"]:hover {
+  background-color: var(--red-color);
+  color: var(--gray-color);
+  transition: all 0.5s;
+}
+
+@media (max-width: 650px) {
+  #email-section {
+    margin-top: 80px;
+  }
+
+  #email-section>h2 {
+    font-size: 1.2rem;
+  }
+
+  #email {
+    width: 100%;
+  }
+}
