@@ -178,3 +178,53 @@ nav>ul {
     width: 100%;
   }
 }
+
+.icon {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  color: var(--red-color);
+  height: 125px;
+}
+
+.description {
+  height: 125px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 650px) {
+  .grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon {
+    margin: 0;
+    height: 80px;
+  }
+}
+
+#how-its-works {
+  justify-content: center;
+  display: flex;
+  height: 500px;
+}
+
+#how-its-works>iframe {
+  display: flex;
+  width: 80%;
+  height: 100%;
+}
+
+@media(max-width: 650px) {
+  #how-its-works {
+    height: 300px;
+  }
+}
