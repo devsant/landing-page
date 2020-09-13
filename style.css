@@ -5,6 +5,7 @@
   --gray-color: #f1faee;
   --blue-color: #457b9d;
   --dark-blue-color: #1d3557;
+  --dark-gray-color: #d2d6d1;
 }
 
 * {
@@ -159,7 +160,8 @@ nav>ul {
   align-self: center;
 }
 
-#form input[type="submit"]:hover {
+#form input[type="submit"]:hover,
+.btn:hover {
   background-color: var(--red-color);
   color: var(--gray-color);
   transition: all 0.5s;
@@ -226,5 +228,81 @@ nav>ul {
 @media(max-width: 650px) {
   #how-its-works {
     height: 300px;
+  }
+}
+
+#pricing {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media(max-width: 650px) {
+  #pricing {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.product {
+  border: solid 1px black;
+  border-radius: 3px;
+  width: 30%;
+  height: 350px;
+}
+
+.product-title {
+  background: var(--dark-gray-color);
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--gray-color);
+
+}
+
+@media(max-width: 650px) {
+  .product {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+}
+
+.product>ol {
+  padding: 1rem 0;
+}
+
+.product>ol li {
+  padding-bottom: 1rem;
+}
+
+#footer {
+  margin-top: 2rem;
+  background-color: var(--dark-gray-color);
+  height: 100px;
+  padding: 20px;
+}
+
+#footer>ul,
+#footer>span {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#footer>ul>li {
+  margin: 0.5rem 1rem;
+}
+
+@media(max-width: 650px) {
+
+  #footer>ul,
+  #footer>span {
+    justify-content: center;
   }
 }
